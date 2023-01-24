@@ -23,10 +23,6 @@ a:hover {
   color: #0f6fff;
 }
 
-.social_list svg:hover {
-  color: #0f6fff;
-}
-
 .social_list svg {
   font-size: 2em;
   cursor: pointer;
@@ -34,4 +30,10 @@ a:hover {
 
 .social_list span {
   font-size: .9em;
+}
+
+@media (max-width: 1155px) {
+  .footer {
+    margin-top: 7em;
+  }
 }

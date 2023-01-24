@@ -8,7 +8,7 @@ import logo from '../../img/logo.png'
 export default function NavBar() {
   return (
     <nav className={styles.navbar}>
-      <Container>
+      <Container customClass="nav">
         <Link to='/'><img src={logo} alt="Portfolio" className={styles.img} /></Link>
         <ul className={styles.list}>
           <li className={styles.item}>

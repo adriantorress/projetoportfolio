@@ -11,14 +11,14 @@ section h1 {
 
 
 section h1 span {
-  background-color: #0f6fff
+  background: linear-gradient(180deg, #0f6fff, #8876d8);
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   margin-top: 7em;
 }
