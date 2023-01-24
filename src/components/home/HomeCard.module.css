@@ -1,0 +1,34 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 14em;
+  margin: 0 2em;
+  width: 20em;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7em;
+  width: 7em;
+  border-radius: 50%;
+  margin: 1.5em;
+  background: linear-gradient(45deg, #0f6fff, #8876d8);
+}
+
+.circle:hover {
+  background: linear-gradient(45deg, #8876d8, #0f6fff);
+}
+
+.circle img {
+  max-height: 7em;
+  max-width: 7em;
+}
+
+.card p {
+  font-size: 1.1em;
+  color: #222;
+  max-width: 90%;
+}

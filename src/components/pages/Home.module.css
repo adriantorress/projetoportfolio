@@ -1,0 +1,24 @@
+section {
+  width: 100%;
+}
+
+section h1 {
+  text-align: center;
+  margin-top: 3em;
+  color: #222;
+  font-size: 2em;
+}
+
+
+section h1 span {
+  background-color: #0f6fff
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 7em;
+}
