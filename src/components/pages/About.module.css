@@ -1,0 +1,30 @@
+.about {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about h1 {
+  text-align: center;
+  margin-top: 3em;
+  color: #222;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+.about h1 span {
+  background: linear-gradient(180deg, #0f6fff, #8876d8);
+}
+
+.about h3 {
+  font-size: 1.3em;
+}
+
+.about p {
+  margin-top: 1em;
+  font-size: 1.1em;
+  color: #222;
+  max-width: 35em;
+  margin-bottom: 4em;
+}

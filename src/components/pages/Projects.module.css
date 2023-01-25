@@ -9,11 +9,6 @@
   font-size: 2em;
 }
 
-
-.section h1 span {
-  background: linear-gradient(180deg, #0f6fff, #8876d8);
-}
-
 .cards {
   display: flex;
   flex-wrap: wrap;

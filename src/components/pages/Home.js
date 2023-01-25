@@ -1,20 +1,21 @@
 import styles from './Home.module.css'
 
-import person from '../../img/person.png'
-import video from '../../img/video.png'
-import college from '../../img/college.png'
+import CircleCard from '../layout/CircleCard'
 
-import HomeCard from '../home/HomeCard'
+import project from '../../img/project.png'
+import about from '../../img/about.png'
+import me from '../../img/me.png'
 
 export default function Home() {
   return (
-    <section>
+    <section className={styles.section}>
       <h1>Bem-vindo ao meu <span> Portfólio</span></h1>
       <div className={styles.cards}>
-        <HomeCard text="Projetos desenvolvidos por mim" route="/madebyme" icon={person} alt="Projetos desenvolvidos por mim" />
-        <HomeCard text="Projetos desenvolvidos em cursos ou videoaulas" route="/madeincourses" icon={video} alt="Projetos desenvolvidos em cursos ou videoaulas" />
-        <HomeCard text="Projetos desenvolvidos durante a faculdade" route="/madeincollege" icon={college} alt="Projetos desenvolvidos durante a faculdade" />
+        <CircleCard text="Projetos" route="/projects" icon={project} alt="Visualizar projetos" />
+        <CircleCard text="Sobre" route="/about" icon={about} alt="Sobre o portfólio" />
+        <CircleCard text="Quem sou eu?" route="/aboutme" icon={me} alt="Sobre mim" />
       </div>
+
 
     </section>
   )

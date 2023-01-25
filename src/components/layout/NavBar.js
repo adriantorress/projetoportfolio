@@ -20,6 +20,9 @@ export default function NavBar() {
           <li className={styles.item}>
             <Link to="/about">Sobre</Link>
           </li>
+          <li className={styles.item}>
+            <Link to="/aboutme">Quem sou eu?</Link>
+          </li>
         </ul>
       </Container>
     </nav>

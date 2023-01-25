@@ -6,6 +6,7 @@ import ProjectsInCourses from './components/pages/ProjectsInCourses.js'
 import ProjectsInCollege from './components/pages/ProjectsInCollege'
 import Projects from './components/pages/Projects'
 import About from './components/pages/About'
+import AboutMe from './components/pages/AboutMe'
 
 
 import NavBar from './components/layout/NavBar';
@@ -25,6 +26,8 @@ function App() {
           <Route path="/madeincollege" element={<ProjectsInCollege />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
+          <Route path="/aboutme" element={<AboutMe />} />
+
         </Routes>
       </Container>
       <Footer />
