@@ -1,0 +1,22 @@
+.text_card {
+  min-width: 33%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 3em;
+}
+
+.text_card h3 {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.text_card p {
+  text-indent: 1.5em;
+  text-align: justify;
+  margin-top: 1em;
+  font-size: 1.1em;
+  color: #222;
+  max-width: 35em;
+  margin-bottom: 4em;
+}
