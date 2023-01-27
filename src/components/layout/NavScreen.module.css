@@ -29,9 +29,6 @@
   color: white;
 }
 
-.block {
-  display: flex;
-}
 
 .menu {
   display: flex;
@@ -45,11 +42,4 @@
   width: 4em;
   scale: 0.9;
   cursor: pointer;
-}
-
-
-@media (min-width: 630px) {
-  .block {
-    display: none;
-  }
 }

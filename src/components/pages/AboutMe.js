@@ -3,11 +3,14 @@ import { useState, useContext } from 'react'
 import { ContextoNavScreen } from '../context'
 
 import Container from '../layout/Container'
+import CircleCard from '../layout/CircleCard'
+import TextCard from '../layout/TextCard'
 
 import styles from './AboutMe.module.css'
 
-import TextCard from '../layout/TextCard'
+
 import me from '../../img/me.jpg'
+import certificate from '../../img/certificate.png'
 
 export default function AboutMe() {
   const { screensOn } = useContext(ContextoNavScreen)
@@ -49,10 +52,8 @@ export default function AboutMe() {
         return (
           <>
             <h2>Diplomas e Certificados</h2>
-            <div className={styles.cards}>
-              <TextCard title="" text='' />
-              <TextCard title="" text="" />
-            </div>
+            <CircleCard text="Alguns que já estão no Linkedin" icon={certificate} external={true} route="https://www.linkedin.com/in/adriantorres-s/details/certifications/"/>
+            <TextCard title="" text="" />
           </>)
     }
   }

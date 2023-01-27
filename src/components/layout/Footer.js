@@ -15,7 +15,7 @@ export default function Footer() {
       {screensOn && (<footer className={styles.footer}>
         <ul className={styles.social_list}>
           <li>
-            <ExternalLink href="https://www.instagram.com/adriantorres.s" target="_blank">
+            <ExternalLink href="https://www.instagram.com/adriantorres.s">
               <FaInstagram />
               <br />
             </ExternalLink>
