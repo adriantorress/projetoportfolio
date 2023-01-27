@@ -25,6 +25,7 @@
 }
 
 .cards {
+  min-height: 28em;
   width: 75%;
   display: flex;
   flex-direction: row;
@@ -47,7 +48,11 @@
   width: 100%;
 }
 
-.profile {
+.profile_hidden {
+ display: none;
+}
+
+.profile {  
   max-width: 7em;
   max-height: 7em;
   margin-top: 4em;
@@ -55,6 +60,7 @@
   scale: 1.2;
   border-radius: 50%;
   box-shadow: 0 0 10px 1px rgba(0, 0, 180, 0.5);
+  cursor: pointer;
 }
 
 .list {
@@ -66,10 +72,6 @@
 
 .item {
   margin-right: 3em;
-}
-
-.item button {
-  border: none;
   cursor: pointer;
   color: #222;
   font-size: 1.1em;

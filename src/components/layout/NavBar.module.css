@@ -2,9 +2,15 @@
   display: flex;
   justify-content: space-between;
   background: linear-gradient(180deg, #0f6fff, #8876d8);
-  padding: 1em;
+  padding: 1em 1.5em;
 }
 
+.menu {
+  display: none;
+  width: 3em;
+  height: 4em;
+  cursor: pointer;
+}
 
 .img {
   height: 5em;
@@ -29,4 +35,15 @@
 
 .item a:hover {
   color: white;
+}
+
+@media (max-width: 630px) {
+  .list {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
 }

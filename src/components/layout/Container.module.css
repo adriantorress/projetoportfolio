@@ -12,6 +12,12 @@
 
 .nav {
   width: 1200px;
+  align-items: center;
+}
+
+.nav_screen {
+  width: 1200px;
+  height: 100%;
 }
 
 .start {

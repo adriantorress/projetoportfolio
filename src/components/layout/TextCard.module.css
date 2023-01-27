@@ -14,9 +14,17 @@
 .text_card p {
   text-indent: 1.5em;
   text-align: justify;
+  word-break: break-word;
   margin-top: 1em;
   font-size: 1.1em;
   color: #222;
   max-width: 35em;
   margin-bottom: 4em;
+}
+
+@media (max-width: 630px) {
+  .text_card p {
+    text-align: justify;
+    word-break: break-word;
+  }
 }

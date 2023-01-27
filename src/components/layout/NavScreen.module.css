@@ -1,0 +1,55 @@
+.nav_screen {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  position: fixed;
+  flex-direction: column;
+  width: 100%;
+  background: linear-gradient(180deg, #0f6fff, #8876d8);
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item {
+  margin-top: 6em;
+}
+
+.item a {
+  font-size: 1.7em;
+  color: #222;
+  text-decoration: none
+}
+
+.item a:hover {
+  color: white;
+}
+
+.block {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7em 1em;
+  width: 100%;
+}
+
+.menu img {
+  height: 4em;
+  width: 4em;
+  scale: 0.9;
+  cursor: pointer;
+}
+
+
+@media (min-width: 630px) {
+  .block {
+    display: none;
+  }
+}

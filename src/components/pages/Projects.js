@@ -6,6 +6,7 @@ import college from '../../img/college.png'
 
 import CircleCard from '../layout/CircleCard'
 
+
 export default function Projects() {
   return (
     <section className={styles.section}>
