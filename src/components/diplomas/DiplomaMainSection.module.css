@@ -28,8 +28,7 @@
 
 @media (max-width: 1630px) {
   .diplomas {
-    height: 60em;
-    overflow-y: auto;
+    height: 45em;
     justify-content: flex-start;
   }
 
@@ -49,13 +48,13 @@
 
 @media (max-width: 880px) {
   .diplomas {
-    height: 55em;
+    height: 40em;
   }
 }
 
 @media (max-width: 630px) {
   .diplomas {
-    height: 50em;
+    height: 37em;
   }
 
   .diplomas::-webkit-scrollbar-track {
@@ -65,14 +64,24 @@
 
 @media (max-width: 520px) {
   .diplomas {
-    height: 46em;
+    height: 35em;
   }
 
 }
 
 @media (max-width: 480px) {
   .diplomas {
-    height: 42em;
+    height: 32em;
   }
 
+}
+
+@media (max-width:412px) {
+  .diplomas {
+    height: 120em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }

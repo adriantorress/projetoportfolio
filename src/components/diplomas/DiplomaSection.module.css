@@ -36,9 +36,9 @@
   .section {
     min-width: 55%;
     margin: 0 5%;
-    height: 55em;
-    overflow-y: auto;
-    justify-content: flex-start;
+    height: 40em;
+    overflow-y: hidden;
+    justify-content: center;
     flex-direction: column;
   }
 
@@ -47,10 +47,7 @@
   }
 
   .doubleImg {
-    display: flex;
     margin: 2em 0;
-    height: 30em;
-    justify-content: flex-start;
   }
 
   .doubleImg img {
@@ -61,21 +58,51 @@
 
 @media (max-width: 1450px) {
   .section {
+    min-width: 60%;
+  }
+}
+
+@media (max-width: 1330px) {
+  .section {
+    min-width: 65%;
+  }
+}
+
+@media (max-width: 1330px) {
+  .section {
     min-width: 70%;
   }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1130px) {
+  .section {
+    min-width: 75%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .section {
+    min-width: 80%;
+  }
+}
+
+@media (max-width: 990px) {
+  .section {
+    min-width: 85%;
+  }
+}
+
+@media (max-width: 930px) {
   .section {
     min-width: 90%;
   }
 }
 
+
 @media (max-width: 880px) {
   .section {
-    min-width: 90%;
     margin: 0 10px;
-    height: 50em;
+    height: 35em;
 
   }
 
@@ -84,6 +111,7 @@
     height: 25em;
 
   }
+
   .doubleImg {
     height: 25em;
   }
@@ -119,7 +147,7 @@
 
 @media (max-width: 630px) {
   .section {
-    height: 45em;
+    height: 32em;
 
   }
 
@@ -164,7 +192,7 @@
   }
 
   .section {
-    height: 42em;
+    height: 30em;
 
   }
 
@@ -187,7 +215,7 @@
   }
 
   .section {
-    height: 38em;
+    height: 27em;
 
   }
 

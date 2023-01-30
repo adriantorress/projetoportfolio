@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .p {
@@ -98,4 +99,10 @@
     margin: .5em 0;
   }
 
+}
+
+@media (max-width: 412px) {
+  .about_me h2 {
+    text-align: center;
+  }
 }
