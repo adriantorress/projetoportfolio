@@ -5,7 +5,7 @@ import { ContextoNavScreen } from '../context'
 import Container from '../layout/Container'
 import CircleCard from '../layout/CircleCard'
 import TextCard from '../layout/TextCard'
-import ProjectSections from '../projects/ProjectSections'
+import DiplomaMainSection from '../diplomas/DiplomaMainSection'
 
 import styles from './AboutMe.module.css'
 
@@ -23,9 +23,9 @@ export default function AboutMe() {
 
   const [who, setWho] = useState("who")
 
-  const listaDeSrc = [diploma_tecnico, certificado_obmep, medalhas_frente, medalhas_verso, reconhecimento_eecav]
-  const listaDeAlt = ["Diploma técnico", "Certificado honra ao mérito obmep", "Medalhas ensino fundamental e OBMEP - frente", "Medalhas ensino fundamental e OBMEP - costas"]
-  const listaDeTitle = ["Diploma do Curso Técnico em Informática para a Internet", "Certificado de Menção Honrosa OBMEP", "Medalhas ensino fundamental e OBMEP (anterior)", "Medalhas ensino fundamental e OBMEP (posterior)"]
+  const listaDeSrc = [diploma_tecnico, certificado_obmep, [medalhas_frente, medalhas_verso], reconhecimento_eecav]
+  const listaDeAlt = ["Diploma técnico", "Certificado honra ao mérito obmep", "Medalhas ensino fundamental", "Honra ao Mérito Ensino Fundamental Escola Estadual Capitão Álvaro Victor"]
+  const listaDeTitle = ["Diploma do Curso Técnico em Informática para a Internet", "Certificado de Menção Honrosa OBMEP", "Medalhas ensino fundamental", "Reconhecimento da Escola Estadual Capitão Álvaro Victor"]
   const listaDeText = []
 
   function render() {
@@ -56,7 +56,7 @@ export default function AboutMe() {
           <>
             <h2>Diplomas, Certificados e Medalhas</h2>
             <CircleCard text="Alguns que já estão no Linkedin" icon={certificate} external={true} route="https://www.linkedin.com/in/adriantorres-s/details/certifications/" />
-            <ProjectSections listaDeSrc={listaDeSrc} listaDeAlt={listaDeAlt} listaDeTitle={listaDeTitle} listaDeText={listaDeText} />
+            <DiplomaMainSection listaDeSrc={listaDeSrc} listaDeAlt={listaDeAlt} listaDeTitle={listaDeTitle} listaDeText={listaDeText} />
           </>)
     }
   }
