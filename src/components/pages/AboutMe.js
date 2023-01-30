@@ -5,17 +5,28 @@ import { ContextoNavScreen } from '../context'
 import Container from '../layout/Container'
 import CircleCard from '../layout/CircleCard'
 import TextCard from '../layout/TextCard'
+import ProjectSections from '../projects/ProjectSections'
 
 import styles from './AboutMe.module.css'
 
 
 import me from '../../img/me.jpg'
 import certificate from '../../img/certificate.png'
+import certificado_obmep from '../../img/certificado_obmep.jpeg'
+import diploma_tecnico from '../../img/diploma_tecnico.jpeg'
+import medalhas_frente from '../../img/medalhas_frente.jpeg'
+import medalhas_verso from '../../img/medalhas_verso.jpeg'
+import reconhecimento_eecav from '../../img/reconhecimento_eecav.jpeg'
 
 export default function AboutMe() {
   const { screensOn } = useContext(ContextoNavScreen)
 
   const [who, setWho] = useState("who")
+
+  const listaDeSrc = [diploma_tecnico, certificado_obmep, medalhas_frente, medalhas_verso, reconhecimento_eecav]
+  const listaDeAlt = ["Diploma técnico", "Certificado honra ao mérito obmep", "Medalhas ensino fundamental e OBMEP - frente", "Medalhas ensino fundamental e OBMEP - costas"]
+  const listaDeTitle = ["Diploma do Curso Técnico em Informática para a Internet", "Certificado de Menção Honrosa OBMEP", "Medalhas ensino fundamental e OBMEP (anterior)", "Medalhas ensino fundamental e OBMEP (posterior)"]
+  const listaDeText = []
 
   function render() {
     switch (who) {
@@ -35,25 +46,17 @@ export default function AboutMe() {
         return (<>
           <h2 >Skills</h2>
           <div className={styles.cards}>
-            <TextCard title="Soft Skills">Sou uma pessoa colaborativa, proativa e tenho rápido aprendizado, consigo me adaptar rapidamente. Quanto a relações interpessoais: me considero simpático e divertido, e no que sei tento ajudar e compartilhar aprendizado. Minha maior dificuldade ou defeito é a introspecção quanto a me arriscar no mercado de trabalho, sei das minhas capacidades, mas ainda assim falta um pouco de confiança para me arriscar, tanto é que não uso muito o Linkedin, fico bastante nervoso em entrevistas e não consigo me expressar. Até por essas dificuldades estou criando esse portfólio para expressar quem eu sou e mostrar os meus projetos.</TextCard>
+            <TextCard title="Soft Skills">Sou uma pessoa colaborativa, proativa e tenho rápido aprendizado, consigo me adaptar rapidamente. <br /> Quanto a relações interpessoais: me considero simpático e divertido, e no que sei tento ajudar e compartilhar aprendizado.
+              <br />Minha maior dificuldade ou defeito é a introspecção quanto a me arriscar no mercado de trabalho. Sei das minhas capacidades, mas ainda assim falta um pouco de confiança para me arriscar, tanto é que não uso muito o Linkedin, o que me atrapalha muito a conseguir oportunidades, pois lá é a porta mais acessível para o mercado de trabalho. Fico um pouco nervoso em entrevistas e não consigo me expressar o tanto quanto eu gostaria. Até por essas dificuldades estou criando esse portfólio para expressar quem eu sou e mostrar os meus projetos. <br /> O que você pode esperar do Adrian: entrega, dedicação, uma pessoa leve que vai chegar pra somar e que tem aprendizado constante.</TextCard>
             <TextCard title="Hard Skills">Minha melhor linguagem de programação é Python, mas já resolvi pequenas atividades da faculdade com Java e C. Eu tenho uma boa lógica de programação e o que difere nas linguagens é apenas a sintaxe não teria dificuldades em migrar de uma para outra caso fosse necessário. Aprendi HTML, CSS e Javascript pois estou interessado no desenvolvimento web, e estou aprendendo agora ReactJS. Consigo criar rotas de back-end com Flask e Node (nunca documentei uma API), além de conhecer boa parte do processo do desenvolvimento web. Sei SQL, uso com MySQL, mas já utilizei o PostgresSQL também. Tenho projeto básico com banco de dados não relacional: Utilizei a biblioteca mongoose para adicionar registros no MongoDB Atlas. Consigo mexer com Git e Github. Tenho um nível intermediário em inglês, consigo entender e ler facilmente, minha dificuldade é com a fala, pois não tenho prática. Sei um pouco de Hardware também, pois meu estágio do curso técnico foi no setor dos técnicos laboratoristas do bloco de informática da instituição, sei fazer montagem e manutenção de computadores (limpeza, instalação de sistemas,etc). </TextCard>
           </div>
         </>)
-      case "awards":
-        return (
-          <>
-            <h2 >Prêmios</h2>
-            <div className={styles.cards}>
-              <TextCard title="" text='' />
-              <TextCard title="" text="" />
-            </div>
-          </>)
       case "diplomas":
         return (
           <>
-            <h2>Diplomas e Certificados</h2>
-            <CircleCard text="Alguns que já estão no Linkedin" icon={certificate} external={true} route="https://www.linkedin.com/in/adriantorres-s/details/certifications/"/>
-            <TextCard title="" text="" />
+            <h2>Diplomas, Certificados e Medalhas</h2>
+            <CircleCard text="Alguns que já estão no Linkedin" icon={certificate} external={true} route="https://www.linkedin.com/in/adriantorres-s/details/certifications/" />
+            <ProjectSections listaDeSrc={listaDeSrc} listaDeAlt={listaDeAlt} listaDeTitle={listaDeTitle} listaDeText={listaDeText} />
           </>)
     }
   }
@@ -73,13 +76,13 @@ export default function AboutMe() {
               <a onClick={() => { setWho("skills") }}>Skills</a>
             </li>
             <li className={styles.item}>
-              <a onClick={() => { setWho("academicJourney") }}>Jornada Acadêmica</a>
+              <a onClick={() => { setWho("academicJourney") }}>Jornada acadêmica</a>
             </li>
             <li className={styles.item}>
-              <a onClick={() => { setWho("diplomas") }} >Diplomas e Certificados</a>
+              <a onClick={() => { setWho("diplomas") }} >Certificados</a>
             </li>
             <li className={styles.item}>
-              <a onClick={() => { setWho("awards") }} >Prêmios</a>
+              <a onClick={() => { setWho("experiences") }} >Experiências profissionais</a>
             </li>
           </ul>
         </div>
