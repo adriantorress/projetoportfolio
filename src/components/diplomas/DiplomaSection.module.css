@@ -101,7 +101,7 @@
 
 @media (max-width: 880px) {
   .section {
-    margin: 0 10px;
+    margin: 0 2em;
     height: 35em;
 
   }
@@ -216,7 +216,7 @@
 
   .section {
     height: 27em;
-
+    margin: 0 1em;
   }
 
   .section img {
@@ -235,8 +235,24 @@
     max-height: 7.5em;
   }
 
+  .section {
+    margin: 0 1em;
+  }
+
   .section img {
     width: 23em;
     height: 15em;
   }
+}
+
+@media (max-width: 280px) {
+  .section {
+    margin: 1
+  }
+
+  .section img {
+    width: 17em;
+    height: 11em;
+  }
+
 }

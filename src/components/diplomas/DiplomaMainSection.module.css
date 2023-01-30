@@ -76,12 +76,13 @@
 
 }
 
-@media (max-width:412px) {
+@media (max-width:420px) {
   .diplomas {
     height: 120em;
     margin-bottom: 2em;
     margin-top: 2em;
     flex-direction: column;
     justify-content: space-around;
+    overflow-x: hidden;
   }
 }

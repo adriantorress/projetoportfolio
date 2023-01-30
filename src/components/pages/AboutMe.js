@@ -21,7 +21,7 @@ import reconhecimento_eecav from '../../img/reconhecimento_eecav.jpeg'
 export default function AboutMe() {
   const { screensOn } = useContext(ContextoNavScreen)
 
-  const [who, setWho] = useState("who")
+  const [who, setWho] = useState()
 
   const listaDeSrc = [diploma_tecnico, certificado_obmep, [medalhas_frente, medalhas_verso], reconhecimento_eecav]
   const listaDeAlt = ["Diploma técnico", "Certificado honra ao mérito obmep", "Medalhas ensino fundamental", "Honra ao Mérito Ensino Fundamental Escola Estadual Capitão Álvaro Victor"]
@@ -58,6 +58,17 @@ export default function AboutMe() {
             <CircleCard text="Alguns que já estão no Linkedin" icon={certificate} external={true} route="https://www.linkedin.com/in/adriantorres-s/details/certifications/" />
             <DiplomaMainSection listaDeSrc={listaDeSrc} listaDeAlt={listaDeAlt} listaDeTitle={listaDeTitle} listaDeText={listaDeText} />
           </>)
+      case "experiences":
+        return (
+          <>
+            <h2>Experiências profissionais</h2>
+            <div className={styles.cards}>
+              <TextCard title="Estágio no Instituto Federal de Alagoas">O estágio para formação no curso técnico em Informática para a Internet integrado ao ensino médio no IFAL foi realizado na própria instituição. <br />Estagiei na área de suporte aos laboratórios na CINFO (Coordenação de Informática) do bloco de informática do instituto. Lá realizei manutenção preventiva, fiz instalação de hardware e software e também instalação em massa de sistemas operacionais, além do suporte aos laboratórios e auditório do bloco.<br />Lá foi minha primeira experiência de ambiente de trabalho, era um ambiente agradável com pessoas legais e o trabalho bem fluído. Gostei bastante da experiência.</TextCard>
+              <TextCard title="Estágio na Illa Sorvetes">Ao fim do curso técnico e não me sentindo preparado para o mercado de trabalho, resolvi buscar emprego visando montar um computador para praticar o que havia aprendido durante o curso. Entrei como estagiário na Illa Sorvetes como frente de loja, fiquei 4 meses e adquiri experiência com atendimento ao cliente e outras atividades que realizei durante o período. Após esses 4 meses fui para o setor de estoque da empresa e fiquei mais 8 meses. <br />Ao fim de 1 ano no estágio e já com o meu computador finalizado, eu resolvi me dedicar aos estudos e prática na programação e sai do estágio. Foi uma ótima experiência para mim, fiz novos amigos e me aprimorei como pessoa.</TextCard>
+            </div>
+          </>)
+      default:
+        setWho("who")
     }
   }
 
