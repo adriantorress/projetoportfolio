@@ -2,11 +2,11 @@ import styles from './Container.module.css'
 
 import { useContext } from 'react'
 
-import { ContextoNavScreen } from '../context'
+import { Contexto } from '../context'
 
 
 export default function Container(props) {
-  const { screensOn } = useContext(ContextoNavScreen)
+  const { screensOn } = useContext(Contexto)
   return (
     <>
       {screensOn && (<div className={`${styles.container} ${styles[props.customClass]}`}>

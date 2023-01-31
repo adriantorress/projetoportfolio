@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 
-export const ContextoNavScreen = createContext({})
+export const Contexto = createContext({})
 
 export const ContextProvider = ({ children }) => {
   const [screenStatus, setScreenStatus] = useState(false)
@@ -15,8 +15,8 @@ export const ContextProvider = ({ children }) => {
 
 
   return (
-    <ContextoNavScreen.Provider value={{ screenStatus, setScreenStatus, navScreenOn, setNavScreenOn, screensOn, setScreensOn }}>
+    <Contexto.Provider value={{ screenStatus, setScreenStatus, navScreenOn, setNavScreenOn, screensOn, setScreensOn}}>
       {children}
-    </ContextoNavScreen.Provider>
+    </Contexto.Provider>
   )
 };

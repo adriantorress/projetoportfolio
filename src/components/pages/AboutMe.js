@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react'
 
-import { ContextoNavScreen } from '../context'
+import { Contexto } from '../context'
 
 import Container from '../layout/Container'
 import CircleCard from '../layout/CircleCard'
@@ -19,7 +19,7 @@ import medalhas_verso from '../../img/medalhas_verso.jpeg'
 import reconhecimento_eecav from '../../img/reconhecimento_eecav.jpeg'
 
 export default function AboutMe() {
-  const { screensOn } = useContext(ContextoNavScreen)
+  const { screensOn } = useContext(Contexto)
 
   const [who, setWho] = useState()
 

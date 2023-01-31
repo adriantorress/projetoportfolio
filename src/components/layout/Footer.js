@@ -4,12 +4,12 @@ import styles from './Footer.module.css'
 
 import { useContext } from 'react'
 
-import {ContextoNavScreen} from '../context'
+import {Contexto} from '../context'
 
 import { ExternalLink } from 'react-external-link'
 
 export default function Footer() {
-  const { screensOn } = useContext(ContextoNavScreen)
+  const { screensOn } = useContext(Contexto)
   return (
     <>
       {screensOn && (<footer className={styles.footer}>
