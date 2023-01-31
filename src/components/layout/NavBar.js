@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 import { useContext, useEffect } from 'react'
 
-import { ContextoNavScreen } from '../context'
+import { Contexto } from '../context'
 
 import Container from './Container'
 
@@ -13,7 +13,7 @@ import NavScreen from './NavScreen'
 
 export default function NavBar() {
 
-  const { screensOn, setScreenStatus, navScreenOn, setNavScreenOn, screenStatus } = useContext(ContextoNavScreen)
+  const { screensOn, setScreenStatus, navScreenOn, setNavScreenOn, screenStatus } = useContext(Contexto)
 
   const toogleNavScreen = () => {
     setNavScreenOn(!navScreenOn)
